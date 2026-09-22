@@ -1,6 +1,6 @@
 # AI Atelier — 한국경제 AI 교육 포트폴리오
 
-`dist/article.html`, `dist/image.html`, `dist/video.html`, `dist/final.html`을 각각 브라우저에서 열 수 있습니다. `dist/index.html`은 기사 페이지와 같은 시작 페이지입니다.
+`dist/introduce.html, dist/article.html`, `dist/image.html`, `dist/video.html`, `dist/final.html`을 각각 브라우저에서 열 수 있습니다. `dist/index.html`은 기사 페이지와 같은 시작 페이지입니다.
 
 공통 디자인은 `dist/style.css`, 기사 상세 보기·이미지 확대·스토리보드 미리보기는 `dist/app.js`에 있습니다. 모든 HTML에는 개별 페이지의 콘텐츠가 들어 있습니다.
 
