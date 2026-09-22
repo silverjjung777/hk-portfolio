@@ -1,0 +1,65 @@
+/* Keep the same editorial layout while allowing each region to reflow. */
+*, *::before, *::after { min-width: 0; }
+html, body { max-width: 100%; }
+body { overflow-x: clip; }
+img, iframe, video { max-width: 100%; }
+
+@media (max-width: 1200px) {
+  header { flex-wrap: wrap; padding-top: 22px; padding-bottom: 0; gap: 16px; }
+  header nav { order: 3; width: 100%; justify-content: flex-start; flex-wrap: wrap; gap: 2px 28px; }
+  .edition { margin-left: auto; }
+  .article-row { grid-template-columns: 42px minmax(110px, 150px) minmax(0, 1fr) 32px; }
+  .row-date { display: none; }
+  .intro h1 { font-size: clamp(3.4rem, 8vw, 7rem); }
+}
+
+@media (max-width: 760px) {
+  header, .intro, main, .intro-video { margin-left: 5%; margin-right: 5%; }
+  .edition { display: none; }
+  .intro h1 { font-size: clamp(2.5rem, 7.8vw, 4.2rem); letter-spacing: -.035em; }
+  .intro h1 .asterisk { font-size: .65em; }
+  .section-title, .gallery-heading { flex-wrap: wrap; gap: 10px 24px; }
+  .article-feature, .project-hero, .about-lead { grid-template-columns: minmax(0, 1fr); }
+  .feature-art { min-height: 310px; }
+  .feature-copy { padding: 36px 7%; }
+  .gallery { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .visual-card:nth-child(2), .visual-card:nth-child(3) { padding-top: 0; margin-top: 0; width: 100%; }
+  .visual-frame, .closeup .visual-frame, .cool .visual-frame { aspect-ratio: 4 / 3; border-radius: 0; }
+  .note { grid-template-columns: minmax(0, 1fr); }
+  .note p { grid-column: auto; }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .case { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .case-label:not(:first-child) { padding-top: 20px; }
+  .about-row { grid-template-columns: minmax(0, 1fr); }
+  .intro-video { margin-top: 28px; }
+}
+
+@media (max-width: 600px) {
+  header nav { gap: 2px 18px; }
+  header nav a { font-size: 14px; }
+  .intro h1 { font-size: clamp(2rem, 7.4vw, 3.35rem); line-height: 1.2; }
+  .intro-bottom p { font-size: 15px; }
+  .article-row { grid-template-columns: 28px minmax(0, 1fr) 28px; gap: 12px; }
+  .row-category { display: none; }
+  .article-row h3 { overflow-wrap: anywhere; }
+  .feature-copy h2, .project-hero h2 { font-size: clamp(1.6rem, 7vw, 2rem); }
+  .project-art { height: min(80vw, 370px); }
+  .project-spec { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process { grid-template-columns: minmax(0, 1fr); }
+  .about-mark { min-height: 230px; }
+  .about-links { grid-template-columns: minmax(0, 1fr); }
+  .intro-video-caption { flex-wrap: wrap; }
+  .screen h2 { font-size: clamp(2.6rem, 10vw, 3.5rem); }
+  footer { gap: 20px; }
+  .copyright { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 380px) {
+  .brand { font-size: 28px; }
+  .brand small { letter-spacing: 1px; }
+  .intro h1 { font-size: 2rem; }
+  .asterisk { font-size: 26px; }
+  .section-title h2 { font-size: 25px; }
+  .project-spec { gap: 15px; }
+  .music-toggle { right: 10px; bottom: 10px; }
+}
