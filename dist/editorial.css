@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'PerpetualSnow';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/PermanentSnow.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;600;800;900&display=swap');
 
 :root {
@@ -250,6 +257,10 @@ dialog { border: 3px solid #000; border-radius: 0; box-shadow: 13px 13px 0 var(-
 .phone-stage { border-left: 2px solid #f5f3ed; }
 .service-details > div > p, .service-points p { color: #b9b9b9; }
 .output-links a, .about-links a { color: #f5f3ed; border-color: #f5f3ed; }
+/* Portfolio-wide display face requested by the creator. */
+body, body *, button, input, textarea, select {
+  font-family: 'PerpetualSnow', 'Noto Sans KR', sans-serif !important;
+}
 @media (max-width: 1200px) {
   header { padding: 20px 5.5% 0; }
   header nav { padding-top: 5px; border-top: 1px solid #555; }
