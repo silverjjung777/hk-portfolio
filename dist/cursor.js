@@ -48,6 +48,14 @@
     context.shadowBlur = 7;
     for (let row = 0; row < wand.length; row++) {
       for (let col = 0; col < wand[row].length; col++) {
+        if (!wandColors[wand[row][col]]) continue;
+        context.fillStyle = '#080808';
+        context.fillRect(col * size - 1, row * size - 1, size + 2, size + 2);
+      }
+    }
+    context.shadowBlur = 0;
+    for (let row = 0; row < wand.length; row++) {
+      for (let col = 0; col < wand[row].length; col++) {
         const color = wandColors[wand[row][col]];
         if (!color) continue;
         context.fillStyle = color;
