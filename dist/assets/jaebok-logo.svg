@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="172" viewBox="0 0 560 172" role="img" aria-labelledby="title desc">
+  <title id="title">재복 로고</title>
+  <desc id="desc">검정과 흰색의 편집 디자인에 빨간 픽셀 별을 더한 재복 워드마크</desc>
+  <style>@font-face{font-family:'PerpetualSnow';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/PermanentSnow.woff2') format('woff2')}</style>
+  <rect width="560" height="172" fill="none"/>
+  <g shape-rendering="crispEdges">
+    <rect x="8" y="12" width="10" height="126" fill="#e5231b"/>
+    <rect x="22" y="12" width="82" height="10" fill="#e5231b"/>
+    <rect x="22" y="128" width="82" height="10" fill="#e5231b"/>
+    <rect x="472" y="27" width="10" height="10" fill="#fff"/>
+    <rect x="492" y="7" width="10" height="50" fill="#fff"/>
+    <rect x="472" y="27" width="50" height="10" fill="#fff"/>
+    <rect x="532" y="27" width="10" height="10" fill="#e5231b"/>
+    <rect x="492" y="67" width="10" height="10" fill="#e5231b"/>
+  </g>
+  <text x="38" y="117" fill="#fff" font-family="PerpetualSnow, 'Noto Sans KR', sans-serif" font-size="112" font-weight="400" letter-spacing="-8">재복</text>
+  <circle cx="432" cy="111" r="12" fill="#e5231b"/>
+  <path d="M38 151H437" stroke="#fff" stroke-width="3"/>
+  <path d="M451 151H542" stroke="#e5231b" stroke-width="9"/>
+  <text x="38" y="168" fill="#fff" font-family="monospace" font-size="12" letter-spacing="4">JAE BOK · CREATIVE ARCHIVE</text>
+</svg>

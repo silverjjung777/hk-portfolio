@@ -81,6 +81,17 @@ header {
   letter-spacing: .16em;
 }
 
+.brand-logo-link {
+  display: inline-flex;
+  width: clamp(170px, 20vw, 280px);
+  line-height: 0;
+}
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.footer-logo { width: clamp(150px, 18vw, 230px); }
 nav { gap: 4px; }
 nav a {
   min-height: 42px;
