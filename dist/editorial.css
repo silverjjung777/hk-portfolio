@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;600;800;900&display=swap');
 
 :root {
-  --paper: #f3f2ee;
-  --ink: #080808;
-  --muted: #595959;
-  --line: #0b0b0b;
+  --paper: #080808;
+  --ink: #f5f3ed;
+  --muted: #b9b9b9;
+  --line: #f5f3ed;
   --accent: #e5231b;
 }
 
@@ -25,10 +25,10 @@ body::before {
   pointer-events: none;
   opacity: .11;
   background-image:
-    repeating-radial-gradient(circle at 18% 27%, #000 0 1px, transparent 1px 4px),
-    linear-gradient(90deg, transparent 49.8%, #0002 50%, transparent 50.2%);
+    repeating-radial-gradient(circle at 18% 27%, #fff 0 1px, transparent 1px 4px),
+    linear-gradient(90deg, transparent 49.8%, #fff2 50%, transparent 50.2%);
   background-size: 7px 7px, 100% 100%;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 
 body::after {
@@ -225,6 +225,31 @@ dialog { border: 3px solid #000; border-radius: 0; box-shadow: 13px 13px 0 var(-
 .music-toggle { border: 2px solid #000; border-radius: 0; box-shadow: 5px 5px 0 #000; }
 .music-toggle[aria-pressed=true] { background: var(--accent); }
 
+/* Dark canvas: keep editorial cards readable against the black base. */
+.feature-copy, .project-hero > div:first-child, .about-lead-copy, .service-copy,
+.project-spec, .service-showcase, dialog {
+  color: #080808;
+}
+.feature-copy p, .project-spec p, .about-lead-copy p, .service-copy p,
+.service-copy .eyebrow, dialog p {
+  color: #595959;
+}
+.article-row, .about-row, .service-details, .process, .output-links,
+.gallery-heading, .visual-caption, .note {
+  color: #f5f3ed;
+}
+.intro, .section-title, .article-row, .visual-caption, .about-row {
+  border-color: #f5f3ed;
+}
+.article-row:hover {
+  background: #f5f3ed;
+  color: #080808;
+}
+.article-row:hover p, .article-row:hover .row-no { color: #333; }
+.page-service { --service-pink-soft: #111; }
+.phone-stage { border-left: 2px solid #f5f3ed; }
+.service-details > div > p, .service-points p { color: #b9b9b9; }
+.output-links a, .about-links a { color: #f5f3ed; border-color: #f5f3ed; }
 @media (max-width: 1200px) {
   header { padding: 20px 5.5% 0; }
   header nav { padding-top: 5px; border-top: 1px solid #555; }
